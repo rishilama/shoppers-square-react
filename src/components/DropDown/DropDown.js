@@ -10,17 +10,22 @@ function Dropdown() {
 
     return (
         <>
-            <ul onClick={handleClick} className={click ? "dropdown-menu clicked" : "dropdown-menu"}>
+            <div onClick={handleClick} className={click ? "dropdown-menu clicked" : "dropdown-menu"}>
                 {MenuItems.map((item, index) => {
                 return (
-                    <li key={index}>
-                        <button className='dropdown-link' onClick={() => setClick(false)}>
-                            {item.title}
-                        </button>
-                    </li>
+                    <>
+                        <div key={index} >
+                            <button className='dropdown-link' onClick={() => setClick(false)}>
+                                {item.title}
+                            </button>
+                        
+                            
+                            <br />
+                        </div>
+                    </>
                 );
                 })}
-            </ul>
+            </div>
         </>
     );
 }
