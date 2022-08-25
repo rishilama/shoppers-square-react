@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./DropDown.css";
 import MenuItems from "../../dummy data/MenuItems";
 
 function Dropdown() {
