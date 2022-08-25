@@ -26,7 +26,7 @@ function Navbar() {
                     </li>
 
                     <li className="nav-item" onMouseEnter={()=>setDropdown(true)} onMouseLeave={()=>setDropdown(false)}>
-                        <button className="nav-links" onClick={closeMobileMenu}>
+                        <button className="nav-links">
                             SHOP <i className="fas fa-caret-down" />
                         </button>
                         {dropdown && <DropDown />}
