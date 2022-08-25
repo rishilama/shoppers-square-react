@@ -11,27 +11,29 @@ function Navbar() {
     const closeMobileMenu = () => setClick(false);
 
     return (
-        <div className="container">
-            <Header />
-            <nav className="navbar">
-                <div className="menu-icon" onClick={handleClick}>
-                    <i className={click ? "fas fa-times" : "fas fa-bars"} />
-                </div>
-                <ul className={click ? "nav-menu active" : "nav-menu"}>
-                    <li className="nav-item">
-                        <Link to="/" className="underline nav-links" onClick={closeMobileMenu}>
-                            HOME
-                        </Link>
-                    </li>
+        <div className="bg-color">
+            <div className="container">
+                <Header />
+                <nav className="navbar">
+                    <div className="menu-icon" onClick={handleClick}>
+                        <i className={click ? "fas fa-times" : "fas fa-bars"} />
+                    </div>
+                    <ul className={click ? "nav-menu active" : "nav-menu"}>
+                        <li className="nav-item">
+                            <Link to="/" className="underline nav-links" onClick={closeMobileMenu}>
+                                HOME
+                            </Link>
+                        </li>
 
-                    <li className="nav-item" onMouseEnter={()=>setDropdown(true)} onMouseLeave={()=>setDropdown(false)}>
-                        <button className="nav-links">
-                            SHOP <i className="fas fa-caret-down" />
-                        </button>
-                        {dropdown && <DropDown />}
-                    </li>
-                </ul>
-            </nav>
+                        <li className="nav-item" onMouseEnter={()=>setDropdown(true)} onMouseLeave={()=>setDropdown(false)}>
+                            <button className="nav-links">
+                                SHOP <i className="fas fa-caret-down" />
+                            </button>
+                            {dropdown && <DropDown />}
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     );
 }
