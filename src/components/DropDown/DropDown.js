@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { MenuItems } from "../../dummy data/MenuItems";
 import "./DropDown.css";
-// import { Link } from "react-router-dom";
+import MenuItems from "../../dummy data/MenuItems";
 
 function Dropdown() {
     const [click, setClick] = useState(false);
@@ -11,20 +10,28 @@ function Dropdown() {
     return (
         <>
             <div onClick={handleClick} className={click ? "dropdown-menu clicked" : "dropdown-menu"}>
-                {MenuItems.map((item, index) => {
+                                
+                {MenuItems?.map((item, index) => {
                 return (
                     <>
-                        <div key={index} >
-                            <button className='dropdown-link' onClick={() => setClick(false)}>
+                        <div key={index}>
+                            <button className='dropdown-link' >
                                 {item.title}
                             </button>
-                        
-                            
-                            <br />
+
+                            {
+                                item.categoryList?.map((listItem, index)=>{
+                                    console.log(listItem.name)
+                                    return(
+                                        <button className="array-list" key={index}>{listItem.name}</button>
+                                    )
+                                })
+                            }
                         </div>
                     </>
                 );
                 })}
+
             </div>
         </>
     );
