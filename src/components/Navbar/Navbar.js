@@ -10,6 +10,10 @@ function Navbar() {
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
+    const MobileView = ()=>{
+       setDropdown(!dropdown)
+    }
+
     return (
         <div className="bg-color">
             <div className="container">
@@ -26,7 +30,7 @@ function Navbar() {
                         </li>
 
                         <li className="nav-item" onMouseEnter={()=>setDropdown(true)} onMouseLeave={()=>setDropdown(false)}>
-                            <button className="nav-links">
+                            <button className="nav-links" onClick={MobileView}>
                                 SHOP <i className="fas fa-caret-down" />
                             </button>
                             {dropdown && <DropDown />}
