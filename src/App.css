@@ -64,6 +64,8 @@ button {
   justify-content: center;
   align-items: flex-end;
   cursor: default;
+
+  font-size: 0.9rem;
 }
 
 /* navbar */
@@ -187,7 +189,7 @@ button {
   }
 
   .logo-container {
-    width: 50%;
+    width: 40%;
     margin-top: 20px;    
   }
 

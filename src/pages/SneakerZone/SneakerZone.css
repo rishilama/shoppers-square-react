@@ -1,0 +1,34 @@
+.page__content{
+    display: grid;
+    grid-template-columns: 25% 80%;
+    column-gap: 20px;
+
+    /* margin-top: 10px; */
+}
+
+.sidebar{
+    width: 100%;
+}
+
+.sidebar-item__head{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.sidebar-item__head:first-child{
+    margin-top: 20px;
+}
+
+.sidebar__buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.sidebar-item__head, .sidebar__buttons button{
+    font-size: 0.9rem;
+}
+
+.sidebar__buttons button:hover{
+    text-decoration: underline;
+}

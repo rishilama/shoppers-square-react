@@ -79,7 +79,7 @@ const MenuItems = [
       },
       {
         id: 10,
-        name: "PUMA",
+        name: "ASICS",
       },
       {
         id: 11,
