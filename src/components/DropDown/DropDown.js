@@ -20,7 +20,6 @@ function Dropdown() {
 
                             {
                                 item.categoryList?.map((listItem, index)=>{
-                                    console.log(listItem.name)
                                     return(
                                         <button className="array-list" key={index}>{listItem.name}</button>
                                     )
