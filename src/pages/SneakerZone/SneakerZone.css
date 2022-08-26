@@ -22,11 +22,15 @@
 .sidebar__buttons{
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .sidebar-item__head, .sidebar__buttons button{
     font-size: 0.9rem;
+}
+
+.sidebar__buttons button{
+    text-align: start;
 }
 
 .sidebar__buttons button:hover{
