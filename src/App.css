@@ -37,6 +37,7 @@ button {
 
   position: sticky;
   top: -1px;
+  z-index: 1;
 }
 
 
@@ -276,6 +277,7 @@ button {
   .dropdown-menu div .dropdown-link {
     border-bottom: none;
     text-decoration: underline;
+    text-align: center;
   }
 
   .dropdown-menu div .dropdown-link,
