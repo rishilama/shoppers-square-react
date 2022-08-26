@@ -14,14 +14,12 @@ function Dropdown() {
                 return (
                     <>
                         <div key={index}>
-                            <button className='dropdown-link' >
-                                {item.title}
-                            </button>
+                            <p className='dropdown-link' >{item.title}</p>
 
                             {
                                 item.categoryList?.map((listItem, index)=>{
                                     return(
-                                        <button className="array-list" key={index}>{listItem.name}</button>
+                                        <button key={index} className="array-list">{listItem.name}</button>
                                     )
                                 })
                             }
