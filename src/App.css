@@ -35,8 +35,8 @@ button {
   background: white;
 
 
-  /* position: sticky; */
-  /* top: -1px; */
+  position: sticky;
+  top: -1px;
 }
 
 
@@ -55,7 +55,7 @@ button {
 }
 
 .logo {
-  width: 80%;
+  width: 65%;
 }
 
 .text-container {
@@ -68,6 +68,9 @@ button {
 
 /* navbar */
 .navbar {
+
+  margin-top: -10px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -163,6 +166,9 @@ button {
 }
 
 @media(max-width:768px) {
+  .bg-color{
+    position: relative;
+  }
   .container {
     width: 95%;
     margin-left: auto;
@@ -180,6 +186,11 @@ button {
     margin-top: 20px;    
   }
 
+  .logo {
+    width: 90%;
+    margin-left: 10px;
+  }
+
   .text-container {
     align-items: center;
     text-align: center;
@@ -190,6 +201,9 @@ button {
     margin-top: 10px;
   }
 
+  .navbar {
+    height: 50px;
+  }
   .nav-menu {
     display: flex;
     flex-direction: column;
@@ -207,7 +221,7 @@ button {
   .nav-menu.active {
     background: #242222;
     left: 0;
-    top: 140px;
+    /* top: 20px; */
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
@@ -222,7 +236,7 @@ button {
   }
 
   .nav-links:hover {
-    background-color: white;
+    background-color: lightgray;
     color: black;
     text-decoration: none;
   }
@@ -287,5 +301,8 @@ button {
 @media(max-width:300px) {
   .logo-container {
     width: 100%;
+  }
+  .nav-menu.active {
+    top: 200px; 
   }
 }
