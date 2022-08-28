@@ -11,8 +11,7 @@ function Header() {
             </div>
 
             <div className="text-container">
-                <p className="header-text">Free Shipping All Over India on orders over ₹4k</p>
-                <p className="header-text">Shipping All Over India</p>
+                <p className="header-text">Free Shipping All Over India on orders over ₹4000</p>
             </div>
         </div>
     )

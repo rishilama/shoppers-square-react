@@ -14,7 +14,9 @@ function Dropdown() {
                 return (
                     <>
                         <div key={index}>
-                            <p className='dropdown-link' >{item.title}</p>
+                            <div className="container">
+                                <p className='dropdown-link' >{item.title}</p>
+                            </div>
 
                             {
                                 item.categoryList?.map((listItem, index)=>{
