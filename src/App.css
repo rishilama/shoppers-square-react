@@ -292,7 +292,7 @@ button {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 100px;
+    top: 120px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -305,7 +305,7 @@ button {
   .nav-menu.active {
     background: #242222;
     left: 0;
-    top: 100px;
+    top: 120px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
@@ -383,6 +383,7 @@ button {
   }
 
   .page__content{
+    margin-top: -50px;
     column-gap: 0;
   }
   .sidebar{
@@ -403,7 +404,7 @@ button {
     grid-template-columns: repeat(2,45%);
   }
   .nav-menu.active {
-    top: 100px; 
+    top: 120px; 
   }
   .logo-container{
     padding-left: 75px;
@@ -416,18 +417,21 @@ button {
 
 @media(max-width:400px){
   .logo-container{
-    padding-left: 0px;
+    margin-left: -40px;
   }
   .menu-icon{
     margin-top: -15px;
   }
   .logo{
-    width: 100%;
+    width: 80%;
   }
 }
 
 @media(max-width:300px) {
   .more-details{
     flex-direction: column;
+  }
+  .logo-container{
+    margin-left: -50px;
   }
 }
