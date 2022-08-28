@@ -1,4 +1,4 @@
-const WatchPageSideBarData = [
+const BagsPageSideBarData = [
     {
       id: 1,
       title: "Categories",
@@ -47,43 +47,51 @@ const WatchPageSideBarData = [
           },
           {
             id: 2,
-            name: "G-SHOCK",
+            name: "BAGS",
           },
           {
             id: 3,
-            name: "EDIFICE",
+            name: "SLINGS",
           },
           {
             id: 4,
-            name: "FOSSIL",
+            name: "LOUIS VUITTON",
           },
           {
             id: 5,
-            name: "DIESEL",
+            name: "GUCCI",
           },
           {
             id: 6,
-            name: "TAG HEUER",
+            name: "CHANEL",
           },
           {
             id: 7,
-            name: "ROLEX",
+            name: "COACH",
           },
           {
             id: 8,
-            name: "EMPORIO ARMANI",
+            name: "JIMMY CHOO",
           },
           {
             id: 9,
-            name: "CARTIER",
+            name: "FENDI",
           },
           {
             id: 10,
-            name: "PATEK PHILIPPE",
+            name: "TORY BRUCH",
+          },
+          {
+            id: 11,
+            name: "BELTS",
+          },
+          {
+            id: 12,
+            name: "SUNGLASSES",
           }
       ]
     }
   ];
   
-  export default WatchPageSideBarData;
+  export default BagsPageSideBarData;
   

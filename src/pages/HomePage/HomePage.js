@@ -7,6 +7,8 @@ function HomePage() {
       <Link to='/'>HomePage</Link>
       <Link to='/sneakerzone'>Sneaker Zone</Link>
       <Link to='/watchex'>Watchex</Link>
+      <Link to='/swankybags'>SwankyBags</Link>
+      <Link to='/newagegadgets'>NewAgeGadgets</Link>
     </>
   )
 }
