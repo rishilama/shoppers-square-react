@@ -391,7 +391,7 @@ button {
 
 @media(max-width:300px) {
   .nav-menu.active {
-    top: 200px; 
+    top: 180px; 
   }
   .more-details{
     flex-direction: column;
