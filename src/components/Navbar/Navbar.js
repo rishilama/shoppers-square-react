@@ -36,6 +36,7 @@ function Navbar() {
                             {dropdown && <DropDown />}
                         </li>
                     </ul>
+                    <i class="fas fa-cart-circle-plus"></i>
                 </nav>
             </div>
         </div>
