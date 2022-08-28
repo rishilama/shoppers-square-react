@@ -292,7 +292,7 @@ button {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 150px;
+    top: 100px;
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -305,7 +305,7 @@ button {
   .nav-menu.active {
     background: #242222;
     left: 0;
-    /* top: 20px; */
+    top: 100px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
@@ -403,30 +403,31 @@ button {
     grid-template-columns: repeat(2,45%);
   }
   .nav-menu.active {
-    top: 180px; 
+    top: 100px; 
   }
   .logo-container{
-    padding-left: 80px;
+    padding-left: 75px;
   }
   .logo{
-    width: 80%;
+    margin-top: 10px;
+    width: 75%;
   }
 }
 
 @media(max-width:400px){
   .logo-container{
-    padding-left: 45px;
+    padding-left: 0px;
+  }
+  .menu-icon{
+    margin-top: -10px;
+  }
+  .logo{
+    width: 100%;
   }
 }
 
 @media(max-width:300px) {
   .more-details{
     flex-direction: column;
-  }
-  .logo-container{
-    padding-left: 0px;
-  }
-  .logo{
-    width: 100%;
   }
 }
