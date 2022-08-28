@@ -1,17 +1,17 @@
 import React from 'react'
 import SideBar from '../../components/SideBar/SideBar'
-import SneakerPageSideBarData from '../../dummy data/SneakerPageSideBarData'
 import ProductContainer from '../../components/ProductContainer/ProductContainer'
+import WatchPageSideBarData from '../../dummy data/WatchPageSideBarData'
 
-function SneakerZone() {
+function Watchex() {
     return (
         <div className='container'>
             <div className='page__content'>
-                <SideBar data={SneakerPageSideBarData} />
+                <SideBar data={WatchPageSideBarData} />
                 <ProductContainer />
             </div>
         </div>
     )
 }
 
-export default SneakerZone
+export default Watchex
