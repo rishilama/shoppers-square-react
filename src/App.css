@@ -387,12 +387,12 @@ button {
     grid-column: 1/3;
     grid-template-columns: repeat(2,45%);
   }
-}
-
-@media(max-width:300px) {
   .nav-menu.active {
     top: 180px; 
   }
+}
+
+@media(max-width:300px) {
   .more-details{
     flex-direction: column;
   }
