@@ -3,6 +3,7 @@ import SideBar from '../../components/SideBar/SideBar'
 import SneakerPageSideBarData from '../../dummy data/SneakerPageSideBarData'
 import ProductContainer from '../../components/ProductContainer/ProductContainer'
 import Slide from 'react-reveal/Slide'
+import SneakerProductPage from '../../dummy data/ProductPage/SneakerProductPage'
 
 
 function SneakerZone() {
@@ -11,7 +12,7 @@ function SneakerZone() {
             <div className='page__content'>
                 <SideBar data={SneakerPageSideBarData} />
                 <Slide bottom>
-                    <ProductContainer />
+                    <ProductContainer productData = {SneakerProductPage} />
                 </Slide>
             </div>
         </div>
