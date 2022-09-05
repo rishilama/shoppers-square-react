@@ -20,24 +20,14 @@ const SneakerProductPage = [
     },
     
     {
-        id: 1,
+        id: 2,
         name: "Air Force 1 'Triple Black'",
         brand: "Nike",
         image : "images/bulk-image-crop/vtwb.jpg",
         price: "₹1700",
         category : ["Nike", "Women's"],
         inStock : 0
-    },
-    
-    {
-        id: 1,
-        name: "Air Force 1 'Triple Black'",
-        brand: "Nike",
-        image : "images/bulk-image-crop/vtwb.jpg",
-        price: "₹1700",
-        category : ["Nike", "Women's"],
-        inStock : 0
-    },
+    }
     
         
 ]
