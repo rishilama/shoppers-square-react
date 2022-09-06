@@ -245,6 +245,26 @@ button {
   aspect-ratio: 1/1;
 }
 
+.noapidata{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noapidata_para{
+  padding-right: 25px;
+  border-right: 2px solid darkgray;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.noapidata_secondary-para{
+  padding-left: 25px;
+  color: darkgray;
+}
+
 /* media queries */
 @media(max-width:999px) {
   .page__content{

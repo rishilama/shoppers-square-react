@@ -33,7 +33,7 @@ function Navbar({ filterBrands }) {
                             <button className="nav-links" onClick={MobileView}>
                                 SHOP <i className="fas fa-caret-down" />
                             </button>
-                            {dropdown && <DropDown filterBrands={filterBrands} />}
+                            {dropdown && <DropDown filterBrands={filterBrands} MobileView={MobileView} />}
                         </li>
                     </ul>
                 </nav>

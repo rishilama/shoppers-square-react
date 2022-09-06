@@ -2,17 +2,21 @@ import React from 'react'
 import SneakerSideBar from '../../components/SneakerSideBar/SneakerSideBar'
 import ProductContainer from '../../components/ProductContainer/ProductContainer'
 import Slide from 'react-reveal/Slide'
+import NoAPIData from '../../components/NoAPIData/NoAPIData'
 
 
 function SneakerZone({filterResult, setData, filterBrands, data }) {
     
-
     return (
         <div className='container'>
             <div className='page__content'>
                 <SneakerSideBar filterResult={filterResult} setData={setData}  filterBrands={filterBrands} />
                 <Slide bottom>
-                    <ProductContainer productData = {data} />
+                    {data.length>0 ? 
+                        <ProductContainer productData = {data} />
+                        :
+                        <NoAPIData />
+                    }
                 </Slide>
             </div>
         </div>

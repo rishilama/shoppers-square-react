@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MenuItems from "../../dummy data/MenuItems";
 
-function Dropdown({ filterBrands }) {
+function Dropdown({ filterBrands, MobileView }) {
     const [click, setClick] = useState(false);
 
     const handleClick = () => setClick(!click);
@@ -10,19 +10,23 @@ function Dropdown({ filterBrands }) {
         <>
             <div onClick={handleClick} className={click ? "dropdown-menu clicked" : "dropdown-menu"}>
                                 
-                {MenuItems?.map((item, index) => {
+                {MenuItems?.map((item) => {
                 return (
                     <>
-                        <div key={index}>
+                        <div key={item.id}>
                             <div className="container">
                                 <p className='dropdown-link' >{item.title}</p>
                             </div>
 
                             {
-                                item.categoryList?.map((listItem, index)=>{
+                                item.categoryList?.map((listItem)=>{
+                                    const dropdownClick = () => {
+                                        filterBrands(`${listItem.name}`)
+                                        MobileView()
+                                    }
                                     return(
                                         <>
-                                            <button key={index} onClick={()=>filterBrands(`${listItem.name}`)} className="array-list">{listItem.name}</button>
+                                            <button key={listItem.id} onClick={dropdownClick} className="array-list">{listItem.name}</button>
                                         </>
                                     )
                                 })
