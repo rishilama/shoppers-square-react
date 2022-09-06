@@ -43,50 +43,46 @@ const MenuItems = [
     categoryList: [
       {
         id: 1,
-        name: "ALL",
-      },
-      {
-        id: 2,
         name: "NIKE",
       },
       {
-        id: 3,
+        id: 2,
         name: "ADIDAS",
       },
       {
-        id: 4,
+        id: 3,
         name: "YEEZY",
       },
       {
-        id: 5,
+        id: 4,
         name: "CROCS",
       },
       {
-        id: 6,
+        id: 5,
         name: "VANS",
       },
       {
-        id: 7,
+        id: 6,
         name: "CONVERSE",
       },
       {
-        id: 8,
+        id: 7,
         name: "NEW BALANCE",
       },
       {
-        id: 9,
+        id: 8,
         name: "BALENCIAGA",
       },
       {
-        id: 10,
+        id: 9,
         name: "ASICS",
       },
       {
-        id: 11,
+        id: 10,
         name: "PUMA",
       },
       {
-        id: 12,
+        id: 11,
         name: "UNDER ₹1000",
       }
     ]
@@ -97,42 +93,38 @@ const MenuItems = [
     categoryList: [
       {
         id: 1,
-        name: "ALL",
-      },
-      {
-        id: 2,
         name: "G-SHOCK",
       },
       {
-        id: 3,
+        id: 2,
         name: "EDIFICE",
       },
       {
-        id: 4,
+        id: 3,
         name: "FOSSIL",
       },
       {
-        id: 5,
+        id: 4,
         name: "DIESEL",
       },
       {
-        id: 6,
+        id: 5,
         name: "TAG HEUER",
       },
       {
-        id: 7,
+        id: 6,
         name: "ROLEX",
       },
       {
-        id: 8,
+        id: 7,
         name: "EMPORIO ARMANI",
       },
       {
-        id: 9,
+        id: 8,
         name: "CARTIER",
       },
       {
-        id: 10,
+        id: 9,
         name: "PATEK PHILIPPE",
       }
     ]
@@ -143,50 +135,38 @@ const MenuItems = [
     categoryList: [
       {
         id: 1,
-        name: "ALL",
-      },
-      {
-        id: 2,
-        name: "BAGS",
-      },
-      {
-        id: 3,
-        name: "SLINGS",
-      },
-      {
-        id: 4,
         name: "LOUIS VUITTON",
       },
       {
-        id: 5,
+        id: 2,
         name: "GUCCI",
       },
       {
-        id: 6,
+        id: 3,
         name: "CHANEL",
       },
       {
-        id: 7,
+        id: 4,
         name: "COACH",
       },
       {
-        id: 8,
+        id: 5,
         name: "JIMMY CHOO",
       },
       {
-        id: 9,
+        id: 6,
         name: "FENDI",
       },
       {
-        id: 10,
+        id: 7,
         name: "TORY BRUCH",
       },
       {
-        id: 11,
+        id: 8,
         name: "BELTS",
       },
       {
-        id: 12,
+        id: 9,
         name: "SUNGLASSES",
       }
     ]
@@ -197,14 +177,10 @@ const MenuItems = [
     categoryList: [
       {
         id: 1,
-        name: "ALL",
-      },
-      {
-        id: 2,
         name: "EARPODS",
       },
       {
-        id: 3,
+        id: 2,
         name: "SMARTWATCHES"
       }
     ]

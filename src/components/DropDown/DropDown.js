@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MenuItems from "../../dummy data/MenuItems";
 
-function Dropdown() {
+function Dropdown({ filterBrands }) {
     const [click, setClick] = useState(false);
 
     const handleClick = () => setClick(!click);
@@ -22,7 +22,7 @@ function Dropdown() {
                                 item.categoryList?.map((listItem, index)=>{
                                     return(
                                         <>
-                                            <button key={index} className="array-list">{listItem.name}</button>
+                                            <button key={index} onClick={()=>filterBrands(`${listItem.name}`)} className="array-list">{listItem.name}</button>
                                         </>
                                     )
                                 })

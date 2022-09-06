@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import DropDown from "../DropDown/DropDown";
 import Header from "../Header/Header";
 
-function Navbar() {
+function Navbar({ filterBrands }) {
     const [click, setClick] = useState(false);
     const [dropdown, setDropdown] = useState(false);
 
@@ -33,7 +33,7 @@ function Navbar() {
                             <button className="nav-links" onClick={MobileView}>
                                 SHOP <i className="fas fa-caret-down" />
                             </button>
-                            {dropdown && <DropDown />}
+                            {dropdown && <DropDown filterBrands={filterBrands} />}
                         </li>
                     </ul>
                 </nav>
