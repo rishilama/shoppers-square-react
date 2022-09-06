@@ -1,44 +1,44 @@
 const MenuItems = [
+  // {
+  //   id: 1,
+  //   title: "Categories",
+  //   categoryList: [
+  //     {
+  //       id: 1,
+  //       name: "EVERYTHING",
+  //     },
+  //     {
+  //       id: 2,
+  //       name: "MEN'S",
+  //     },
+  //     {
+  //       id: 3,
+  //       name: "WOMEN'S",
+  //     },
+  //     {
+  //       id: 4,
+  //       name: "SNEAKERS",
+  //     },
+  //     {
+  //       id: 5,
+  //       name: "SNEAKERS UNDER ₹1000",
+  //     },
+  //     {
+  //       id: 6,
+  //       name: "WATCHES",
+  //     },
+  //     {
+  //       id: 7,
+  //       name: "BAGS AND ACCESSORIES",
+  //     },
+  //     {
+  //       id: 8,
+  //       name: "GADGETS",
+  //     }
+  //   ]
+  // },
   {
     id: 1,
-    title: "Categories",
-    categoryList: [
-      {
-        id: 1,
-        name: "EVERYTHING",
-      },
-      {
-        id: 2,
-        name: "MEN'S",
-      },
-      {
-        id: 3,
-        name: "WOMEN'S",
-      },
-      {
-        id: 4,
-        name: "SNEAKERS",
-      },
-      {
-        id: 5,
-        name: "SNEAKERS UNDER ₹1000",
-      },
-      {
-        id: 6,
-        name: "WATCHES",
-      },
-      {
-        id: 7,
-        name: "BAGS AND ACCESSORIES",
-      },
-      {
-        id: 8,
-        name: "GADGETS",
-      }
-    ]
-  },
-  {
-    id: 2,
     title: "Sneakers",
     categoryList: [
       {
@@ -83,20 +83,16 @@ const MenuItems = [
       },
       {
         id: 11,
-        name: "BALENCIAGA",
-      },
-      {
-        id: 12,
         name: "PUMA",
       },
       {
-        id: 13,
+        id: 12,
         name: "UNDER ₹1000",
       }
     ]
   },
   {
-    id: 3,
+    id: 2,
     title: "Watches",
     categoryList: [
       {
@@ -142,7 +138,7 @@ const MenuItems = [
     ]
   },
   {
-    id: 4,
+    id: 3,
     title: "Bags & Accessories",
     categoryList: [
       {
@@ -196,7 +192,7 @@ const MenuItems = [
     ]
   },
   {
-    id: 5,
+    id: 4,
     title: "Gadgets",
     categoryList: [
       {

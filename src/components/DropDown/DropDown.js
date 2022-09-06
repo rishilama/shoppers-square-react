@@ -21,7 +21,9 @@ function Dropdown() {
                             {
                                 item.categoryList?.map((listItem, index)=>{
                                     return(
-                                        <button key={index} className="array-list">{listItem.name}</button>
+                                        <>
+                                            <button key={index} className="array-list">{listItem.name}</button>
+                                        </>
                                     )
                                 })
                             }
