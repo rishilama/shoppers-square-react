@@ -307,11 +307,10 @@ button {
     display: flex;
     justify-content: center;
     width: 110%;
-    padding-bottom: 20px;
-
   }
 
   .logo{
+    padding-bottom: 10px;
     width: 70%;
 
     display: grid;
