@@ -4,23 +4,23 @@ import { useState } from 'react'
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SneakerZone from './pages/SneakerZone/SneakerZone';
-import Navbar from './components/Navbar/Navbar';
+import Header from '../src/components/Header/Header'
 import HomePage from './pages/HomePage/HomePage';
 import Watchex from './pages/Watchex/Watchex';
 // import SwankyBags from './pages/SwankyBags/SwankyBags';
 // import NewAgeGadgets from './pages/NewAgeGadgets/NewAgeGadgets';
 
 
-import SneakerProductPage from '../src/dummy data/ProductPage/SneakerProductPage'
+import AllProductData from '../src/dummy data/AllProductData/AllProductData'
 
 
 function App() {
 
 
-  const [data, setData] = useState(SneakerProductPage);
+  const [data, setData] = useState(AllProductData);
 
   const filterResult = (catItem) => {
-      const result = Object.values(SneakerProductPage).filter((currData)=>{
+      const result = Object.values(AllProductData).filter((currData)=>{
           return currData.category === catItem
       });
       setData(result)
@@ -30,7 +30,7 @@ function App() {
   }
 
   const filterBrands = (brandItem) => {
-      const brandResult = SneakerProductPage.filter((brandCurrData)=>{
+      const brandResult = AllProductData.filter((brandCurrData)=>{
           return brandCurrData.brand === brandItem
       })
       setData(brandResult)
@@ -39,15 +39,17 @@ function App() {
 
   return (
     <Router>
-      <Navbar filterResult={filterResult} setData={setData}  filterBrands={filterBrands} data={data} />
-      <Routes>
-        <Route path='/' exact element={<HomePage />} />
-        <Route path='/sneakerzone' element={<SneakerZone filterResult={filterResult} setData={setData}  filterBrands={filterBrands} data={data} />} />
-        <Route path='/watchex' element={<Watchex />} />
-        {/* <Route path='/swankybags' element={<SwankyBags />} />
-        <Route path='/newagegadgets' element={<NewAgeGadgets />} /> */}
-      </Routes>
-    </Router>
+        <div className='container'>
+          <Header />
+        </div>
+        <Routes>
+          <Route path='/' exact element={<HomePage />} />
+          <Route path='/sneakerzone' element={<SneakerZone filterResult={filterResult} setData={setData}  filterBrands={filterBrands} data={data} />} />
+          <Route path='/watchex' element={<Watchex />} />
+          {/* <Route path='/swankybags' element={<SwankyBags />} />
+          <Route path='/newagegadgets' element={<NewAgeGadgets />} /> */}
+        </Routes>
+      </Router>
   );
 }
 

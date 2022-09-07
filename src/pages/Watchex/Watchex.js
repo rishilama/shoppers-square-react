@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import ProductContainer from '../../components/ProductContainer/ProductContainer'
 import Slide from 'react-reveal/Slide'
 import WatchesSideBar from '../../components/WatchesSideBar/WatchesSideBar';
-import SneakerProductPage from '../../dummy data/ProductPage/SneakerProductPage'
+import AllProductData from '../../dummy data/AllProductData/AllProductData'
 
 function Watchex() {
-    const [data, setData] = useState(SneakerProductPage);
+    const [data, setData] = useState(AllProductData);
 
     const filterResult = (catItem) => {
-        const result = Object.values(SneakerProductPage).filter((currData)=>{
+        const result = Object.values(AllProductData).filter((currData)=>{
             return currData.category === catItem
         });
         setData(result)
@@ -18,7 +18,7 @@ function Watchex() {
     }
 
     const filterBrands = (brandItem) => {
-        const brandResult = SneakerProductPage.filter((brandCurrData)=>{
+        const brandResult = AllProductData.filter((brandCurrData)=>{
             return brandCurrData.brand === brandItem
         })
         setData(brandResult)
