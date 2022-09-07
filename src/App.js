@@ -37,11 +37,9 @@ function App() {
   }
 
 
-  return (
+    return (
     <Router>
-        <div className='container'>
-          <Header />
-        </div>
+        <Header />
         <Routes>
           <Route path='/' exact element={<HomePage />} />
           <Route path='/sneakerzone' element={<SneakerZone filterResult={filterResult} setData={setData}  filterBrands={filterBrands} data={data} />} />

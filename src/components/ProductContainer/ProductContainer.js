@@ -15,7 +15,7 @@ function ProductContainer({ productData }) {
                             <p className='brand'>{itemData.brand}</p>
                             <p className='name'>{itemData.name}</p>
                             <div className='more-details'>
-                                <p className='price'>{itemData.price}</p>
+                                <p className='price'>₹ {itemData.price}</p>
                                 {itemData.inStock === 1 ? <p></p> : <p className='stock'>SOLD OUT</p>}
 
                             </div>

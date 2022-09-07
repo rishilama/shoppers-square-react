@@ -14,7 +14,7 @@ function Navbar({ filterBrands }) {
     }
 
     return (
-        <div className="bg-color">
+        <div className="bg-color__navbar">
             <nav className="navbar">
                 <div className="menu-icon" onClick={handleClick}>
                     <i className={click ? "fas fa-times" : "fas fa-bars"} />
