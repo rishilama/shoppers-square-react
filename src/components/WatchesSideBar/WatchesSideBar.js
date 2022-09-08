@@ -1,7 +1,6 @@
 import React from "react";
-import SneakerProductPage from '../../dummy data/ProductPage/SneakerProductPage';
 
-function WatchesSideBar({ filterResult,setData, filterBrands }) {
+function WatchesSideBar({ filterResult, filterBrands }) {
 
     return (
         <div className="sidebar">
@@ -9,7 +8,6 @@ function WatchesSideBar({ filterResult,setData, filterBrands }) {
             <p className="sidebar-item__head">CATEGORIES</p>
                         
             <div className="sidebar__buttons">
-                <button onClick={()=>setData(SneakerProductPage)}>EVERYTHING</button>
                 <button onClick={()=>filterResult("MEN'S SNEAKERS")}>MEN'S SNEAKERS</button>
                 <button onClick={()=>filterResult("WOMEN'S SNEAKERS")}>WOMEN'S SNEAKERS</button>
                 <button onClick={()=>filterResult("SNEAKERS UNDER 1000")}>SNEAKERS UNDER 1000</button>

@@ -1,7 +1,32 @@
-import React from "react";
-import SneakerProductPage from "../../dummy data/ProductPage/SneakerProductPage";
+import React, { useEffect, useState } from "react";
+// import SneakerProductPage from "../../dummy data/ProductPage/SneakerProductPage";
 
 function SneakerSideBar({ filterResult,setData, filterBrands }) {
+
+    const [sneakerData, setSneakerData] = useState({});
+
+    useEffect(()=>{
+        const fetchData = async () => {
+        try {
+            const response = await fetch('https://api-product-shopperssquare.herokuapp.com/AllProductData')
+            if (!response.ok){
+            throw new Error("Server responds with error!")
+            }
+            
+            const res = await response.json();
+            const sneaker = res.filter(sneaker=>{
+                return sneaker.category==="MEN'S SNEAKERS" || sneaker.category==="WOMEN'S SNEAKERS"
+            })
+            console.log("SNEAKER",sneaker)
+            setSneakerData(sneaker)
+            }
+            catch{
+                console.log("err")
+            }
+        }
+        fetchData();
+    }, [])
+
 
     return (
         <div className="sidebar">
@@ -9,7 +34,7 @@ function SneakerSideBar({ filterResult,setData, filterBrands }) {
             <p className="sidebar-item__head">CATEGORIES</p>
                         
             <div className="sidebar__buttons">
-                <button onClick={()=>setData(SneakerProductPage)}>EVERYTHING</button>
+                <button onClick={()=>setData(sneakerData)}>EVERYTHING</button>
                 <button onClick={()=>filterResult("MEN'S SNEAKERS")}>MEN'S SNEAKERS</button>
                 <button onClick={()=>filterResult("WOMEN'S SNEAKERS")}>WOMEN'S SNEAKERS</button>
                 <button onClick={()=>filterResult("SNEAKERS UNDER 1000")}>SNEAKERS UNDER 1000</button>

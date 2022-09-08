@@ -11,7 +11,7 @@ function SneakerZone({filterResult, setData, filterBrands, data }) {
         <div className='container'>
             <Navbar filterBrands={filterBrands} />
             <div className='page__content'>
-                <SneakerSideBar filterResult={filterResult} setData={setData}  filterBrands={filterBrands} />
+                <SneakerSideBar filterResult={filterResult} setData={setData}  filterBrands={filterBrands} productData = {data} />
                 <Slide bottom>
                     {data.length>0 ? 
                         <ProductContainer productData = {data} />

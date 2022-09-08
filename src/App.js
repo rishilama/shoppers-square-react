@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 
 import './App.css';
@@ -11,16 +11,38 @@ import Watchex from './pages/Watchex/Watchex';
 // import NewAgeGadgets from './pages/NewAgeGadgets/NewAgeGadgets';
 
 
-import AllProductData from '../src/dummy data/AllProductData/AllProductData'
+// import AllProductData from '../src/dummy data/AllProductData/AllProductData'
 
 
 function App() {
 
+  const [apiData, setAPIData] = useState({});
 
-  const [data, setData] = useState(AllProductData);
+  useEffect(()=>{
+    const fetchData = async () => {
+      try {
+        const response = await fetch('https://api-product-shopperssquare.herokuapp.com/AllProductData')
+        if (!response.ok){
+          throw new Error("Server responds with error!")
+        }
+
+        const res = await response.json();
+        setAPIData(res)
+      }
+      catch{
+        console.log("err")
+      }
+    }
+    fetchData();
+  }, [])
+
+  console.log("API DATA", apiData)
+
+
+  const [data, setData] = useState(apiData);
 
   const filterResult = (catItem) => {
-      const result = Object.values(AllProductData).filter((currData)=>{
+      const result = Object.values(apiData).filter((currData)=>{
           return currData.category === catItem
       });
       setData(result)
@@ -30,7 +52,7 @@ function App() {
   }
 
   const filterBrands = (brandItem) => {
-      const brandResult = AllProductData.filter((brandCurrData)=>{
+      const brandResult = apiData.filter((brandCurrData)=>{
           return brandCurrData.brand === brandItem
       })
       setData(brandResult)

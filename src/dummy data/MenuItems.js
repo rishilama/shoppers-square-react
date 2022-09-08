@@ -47,43 +47,43 @@ const MenuItems = [
       },
       {
         id: 2,
-        name: "ADIDAS",
+        name: "JORDAN",
       },
       {
         id: 3,
-        name: "YEEZY",
+        name: "ADIDAS",
       },
       {
         id: 4,
-        name: "CROCS",
+        name: "YEEZY",
       },
       {
         id: 5,
-        name: "VANS",
+        name: "CROCS",
       },
       {
         id: 6,
-        name: "CONVERSE",
+        name: "VANS",
       },
       {
         id: 7,
-        name: "NEW BALANCE",
+        name: "CONVERSE",
       },
       {
         id: 8,
-        name: "BALENCIAGA",
+        name: "NEW BALANCE",
       },
       {
         id: 9,
-        name: "ASICS",
+        name: "BALENCIAGA",
       },
       {
         id: 10,
-        name: "PUMA",
+        name: "ASICS",
       },
       {
         id: 11,
-        name: "UNDER ₹1000",
+        name: "PUMA",
       }
     ]
   },

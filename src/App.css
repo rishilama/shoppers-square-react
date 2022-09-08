@@ -209,7 +209,8 @@ button {
   word-spacing: 3px;
 }
 
-.sidebar__buttons button:hover{
+.sidebar__buttons button:hover,
+.sidebar__buttons button:focus{
   text-decoration: underline;
 }
 
