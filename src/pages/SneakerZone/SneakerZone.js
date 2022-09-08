@@ -7,7 +7,6 @@ import NoAPIData from '../../components/NoAPIData/NoAPIData'
 import Navbar from '../../components/Navbar/Navbar'
 
 function SneakerZone({filterResult, setData, filterBrands, data }) {
-    
     return (
         <div className='container'>
             <Navbar filterBrands={filterBrands} />
