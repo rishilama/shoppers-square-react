@@ -6,6 +6,7 @@ const AllProductData = [
         image : "images/bulk-image-crop/vtwb2.jpg",
         price: 3299,
         sizes: "40-41-42-43-44-45",
+        productCategory : "sneakers",
         category : "MEN'S SNEAKERS",
         inStock : 1
     },
@@ -16,6 +17,7 @@ const AllProductData = [
         image : "images/bulk-image-crop/aj4bc2.jpeg",
         price: 2899,
         sizes: "41-42-43-44-45",
+        productCategory : "sneakers",
         category : "MEN'S SNEAKERS",
         inStock : 1
     },
@@ -26,6 +28,7 @@ const AllProductData = [
         image : "images/bulk-image-crop/aj4psg.jpeg",
         price: 2949,
         sizes: "41-42-43-44-45",
+        productCategory : "sneakers",
         category : "MEN'S SNEAKERS",
         inStock : 1
     },
@@ -36,6 +39,7 @@ const AllProductData = [
         image : "images/bulk-image-crop/aj1fearless.jpeg",
         price: 3049,
         sizes: "41-42-43-44-45",
+        productCategory : "sneakers",
         category : "MEN'S SNEAKERS",
         inStock : 1
     },    
@@ -46,6 +50,7 @@ const AllProductData = [
         image : "images/bulk-image-crop/aj1panda.jpeg",
         price: 2949,
         sizes: "41-42-43-44-45",
+        productCategory : "sneakers",
         category : "MEN'S SNEAKERS",
         inStock : 1
     },
@@ -56,6 +61,7 @@ const AllProductData = [
         image : "images/bulk-image-crop/yzy350brl.jpeg",
         price: 2699,
         sizes: "41-42-43-44-45",
+        productCategory : "sneakers",
         category : "MEN'S SNEAKERS",
         inStock : 1
     },
@@ -66,6 +72,7 @@ const AllProductData = [
         image : "images/bulk-image-crop/am90wgr.jpeg",
         sizes: "41-42-43-44-45",
         price: 2499,
+        productCategory : "sneakers",
         category : "MEN'S SNEAKERS",
         inStock : 1
     },
@@ -76,6 +83,7 @@ const AllProductData = [
         image : "images/bulk-image-crop/am90bt2.jpeg",
         sizes: "41-42-43-44-45",
         price: 2799,
+        productCategory : "sneakers",
         category : "MEN'S SNEAKERS",
         inStock : 1
     },
@@ -86,6 +94,7 @@ const AllProductData = [
         image : "images/bulk-image-crop/f2.jpeg",
         sizes: "40-41-42-43-44-45",
         price: 2749,
+        productCategory : "sneakers",
         category : "MEN'S SNEAKERS",
         inStock : 1
     },
@@ -96,6 +105,7 @@ const AllProductData = [
         image : "images/bulk-image-crop/nb327oreo2.jpeg",
         sizes: "40-41-42-43-44",
         price: 2749,
+        productCategory : "sneakers",
         category : "MEN'S SNEAKERS",
         inStock : 1
     },
@@ -106,6 +116,7 @@ const AllProductData = [
         image : "images/bulk-image-crop/nb2002rdn.jpeg",
         sizes: "41-42-43-44-45",
         price: 3549,
+        productCategory : "sneakers",
         category : "MEN'S SNEAKERS",
         inStock : 1
     },
@@ -114,6 +125,7 @@ const AllProductData = [
         brand: "ROLEX",
         image : "images/bulk-image-crop/nb2002rdn.jpeg",
         price: 3549,
+        productCategory : "watches",
         category : "MEN'S WATCHES",
         inStock : 1
     },
@@ -124,7 +136,19 @@ const AllProductData = [
         image : "images/bulk-image-crop/obfm.jpeg",
         sizes: "36-37-38-39-40",
         price: 3549,
+        productCategory : "sneakers",
         category : "WOMEN'S SNEAKERS",
+        inStock : 1
+    },
+    {
+        id: 12,
+        name: "Nakli juta",
+        brand: "JORDAN",
+        image : "images/bulk-image-crop/obfm.jpeg",
+        sizes: "36-37-38-39-40",
+        price: 1000,
+        productCategory : "sneakers",
+        category : "UNDER 1K",
         inStock : 1
     },
 ]

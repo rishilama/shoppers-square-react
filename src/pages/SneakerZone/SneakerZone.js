@@ -6,12 +6,12 @@ import NoAPIData from '../../components/NoAPIData/NoAPIData'
 
 import Navbar from '../../components/Navbar/Navbar'
 
-function SneakerZone({filterResult, setData, filterBrands, data }) {
+function SneakerZone({filterResult, setData, filterBrands, data, filterEverythingSneaker }) {
     return (
         <div className='container'>
             <Navbar filterBrands={filterBrands} />
             <div className='page__content'>
-                <SneakerSideBar filterResult={filterResult} setData={setData}  filterBrands={filterBrands} productData = {data} />
+                <SneakerSideBar filterResult={filterResult} setData={setData}  filterBrands={filterBrands} productData = {data} filterEverythingSneaker={filterEverythingSneaker} />
                 <Slide bottom>
                     {data.length>0 ? 
                         <ProductContainer productData = {data} />

@@ -1,32 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 // import SneakerProductPage from "../../dummy data/ProductPage/SneakerProductPage";
 
-function SneakerSideBar({ filterResult,setData, filterBrands }) {
+function SneakerSideBar({ filterResult,data, filterBrands, filterEverythingSneaker }) {
 
-    const [sneakerData, setSneakerData] = useState({});
+    // const [sneakerData, setSneakerData] = useState({});
 
-    useEffect(()=>{
-        const fetchData = async () => {
-        try {
-            const response = await fetch('https://api-product-shopperssquare.herokuapp.com/AllProductData')
-            if (!response.ok){
-            throw new Error("Server responds with error!")
-            }
+    // useEffect(()=>{
+    //     const fetchData = async () => {
+    //     try {
+    //         const response = await fetch('https://api-product-shopperssquare.herokuapp.com/AllProductData')
+    //         if (!response.ok){
+    //         throw new Error("Server responds with error!")
+    //         }
             
-            const res = await response.json();
-            const sneaker = res.filter(sneaker=>{
-                return sneaker.category==="MEN'S SNEAKERS" || sneaker.category==="WOMEN'S SNEAKERS"
-            })
-            console.log("SNEAKER",sneaker)
-            setSneakerData(sneaker)
-            }
-            catch{
-                console.log("err")
-            }
-        }
-        fetchData();
-    }, [])
+    //         // const res = await response.json();
+    //         // const sneaker = res.filter(sneaker=>{
+    //         //     return sneaker.category==="MEN'S SNEAKERS" || sneaker.category==="WOMEN'S SNEAKERS" || sneaker.category==="UNDER 1K"
+    //         // })
+    //         // console.log("SNEAKER",sneaker)
+    //         // setSneakerData(sneaker)
+    //         // console.log("This is Sneaker DAta", sneakerData)
+    //         }
+    //         catch{
+    //             console.log("err")
+    //         }
+    //     }
+    //     fetchData();
+    // }, [])
 
+    // const EVERYTHING = ["MEN'S SNEAKERS", "WOMEN'S SNEAKERS", "UNDER 1K"]
+
+    console.log("This is Everything",data)
 
     return (
         <div className="sidebar">
@@ -34,14 +38,10 @@ function SneakerSideBar({ filterResult,setData, filterBrands }) {
             <p className="sidebar-item__head">CATEGORIES</p>
                         
             <div className="sidebar__buttons">
-                <button onClick={()=>setData(sneakerData)}>EVERYTHING</button>
+                <button onClick={()=>filterEverythingSneaker("sneakers")}>EVERYTHING</button>
                 <button onClick={()=>filterResult("MEN'S SNEAKERS")}>MEN'S SNEAKERS</button>
                 <button onClick={()=>filterResult("WOMEN'S SNEAKERS")}>WOMEN'S SNEAKERS</button>
-                <button onClick={()=>filterResult("SNEAKERS UNDER 1000")}>SNEAKERS UNDER 1000</button>
-                <button onClick={()=>filterResult("MEN'S WATCHES")}>MEN'S WATCHES</button>
-                <button onClick={()=>filterResult("WOMEN'S WATCHES")}>WOMEN'S WATCHES</button>
-                <button onClick={()=>filterResult("BAGS AND ACCESSORIES")}>BAGS AND ACCESSORIES</button>
-                <button onClick={()=>filterResult("GADGETS")}>GADGETS</button>
+                <button onClick={()=>filterResult("UNDER 1K")}>SNEAKERS UNDER 1000</button>
 
             </div>
 
@@ -60,7 +60,6 @@ function SneakerSideBar({ filterResult,setData, filterBrands }) {
                 <button onClick={()=>filterBrands("BALENCIAGA")}>BALENCIAGA</button>
                 <button onClick={()=>filterBrands("ASICS")}>ASICS</button>
                 <button onClick={()=>filterBrands("PUMA")}>PUMA</button>
-                <button onClick={()=>filterBrands("UNDER ₹1000")}>UNDER ₹1000</button>
 
             </div>
         </div>

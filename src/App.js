@@ -38,13 +38,19 @@ function App() {
       setData(brandResult)
   }
 
+  const filterEverythingSneaker = (everythingSneakerItem) => {
+    const EverythingSneakerResult = AllProductData.filter((EverythingSneakerData)=>{
+      return EverythingSneakerData.productCategory === everythingSneakerItem
+    })
+    setData(EverythingSneakerResult)
+  }
 
     return (
     <Router>
         <Header />
         <Routes>
           <Route path='/' exact element={<HomePage />} />
-          <Route path='/sneakerzone' element={<SneakerZone filterResult={filterResult} setData={setData}  filterBrands={filterBrands} data={data} />} />
+          <Route path='/sneakerzone' element={<SneakerZone filterResult={filterResult} setData={setData}  filterBrands={filterBrands} data={data} filterEverythingSneaker={filterEverythingSneaker} />} />
           <Route path='/watchex' element={<Watchex />} />
           {/* <Route path='/swankybags' element={<SwankyBags />} />
           <Route path='/newagegadgets' element={<NewAgeGadgets />} /> */}
